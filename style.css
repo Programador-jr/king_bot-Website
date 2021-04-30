@@ -9,9 +9,18 @@ body
     background-repeat: no-repeat;
     height: 750px;
 }
-::-webkit-scrollbar
-{
-		width: 5px;
+::-webkit-Scrollbar{
+    width: 5px; 
+	background: #000617;
+}
+::-webkit-Scrollbar-thumb{
+	border-radius: 10px;
+	background: #00bfff;
+	box-shadow: inset 0 0 20px #00bfff;
+}
+::-webkit-Scrollbar-track{
+	margin-top: 0px;
+	border-radius: 10px;
 }
 #preloader {
     position:fixed;
