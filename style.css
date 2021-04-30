@@ -84,14 +84,14 @@ body
 h3
 {
     color: #00bfff;
-    padding-top: 20px;
+    padding-top: 70px;
     padding-bottom: 25px;
 		padding-left: 40px;
 }
 h2
 {
 		color: #00bfff;
-    padding-top: 20px;
+    padding-top: 70px;
     padding-bottom: 25px;
 		padding-left: 40px;
 		margin-left: 50px;
@@ -137,6 +137,10 @@ table
 {
 		margin-top: 50px;
 		align-items:center;
+}
+nav.navbar.bootsnav
+{
+	position: fixed;
 }
 nav.navber.bootsnav
 {
