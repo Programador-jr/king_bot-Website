@@ -1,0 +1,7 @@
+check_confirmed_dyna
+check_ip_reverse_dns
+require_helo
+valid_helo_domain
+require_full_addr
+valid_from_domain
+valid_ptr

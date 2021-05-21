@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+<head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
 
     <title>King</title>
@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="bootsnav.css">
 
-    <link rel="shortcut icon" type="image/x-icon" href="image/dabi.ico">
+    <link rel="shortcut icon" type="image/png" href="https://i.pinimg.com/originals/2b/45/33/2b45336ef14006bfe15e3cb95d857458.png">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -64,7 +64,8 @@
                                         </ul>
                                    <!-- <li><a href="#">Comandos<span></span></a></li> -->
                                     <li><a href="https://discord.com/oauth2/authorize?client_id=794291443454836766&scope=bot&permissions=2102658175">Convite<span></span></a></li>
-                                    <li><a href="#">Código<span></span></a></li>
+                                    <li><a href="https://github.com/Programador-jr/King">Código<span></span></a></li>
+                                    <li><a href="https://github.com/Programador-jr/King/issues">Relatar Erro<span></span></a></li>
                                     <li class="dropdown megamenu-fw">
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-togle="dropdown" data-hover="Contact">Votar<span></span></a>
@@ -269,7 +270,7 @@
 				</tr>
 			</table>
 		</div>
-		<div id="photo commands">
+		<div id="photo" id="commands">
 			<h2 class="text-center text-uppercase">imagem</h2>
 				<table>
 					<tr>
@@ -345,56 +346,48 @@
 					</tr>
 				</table>
 		</div>
-		<div id="commands moderation">
+		<div id="moderation" id="commands">
 			<h2 class="text-center text-uppercase">Moderação</h2>
 			<table>
 				<tr>
 					<th>Comandos</th>
 					<th>Descrição</th>
 					<th>Aliases</th>
-					<th>Usage</th>
 				</tr>
 				<tr>
 					<td>adcmd</td>
 					<td>Adicionar comandos personalizados de guilda</td>
 					<td>["novocomando", "newcommand", "adicionarcomando"]</td>
-					<td>adcmd &lt;cmd_nome&gt; &lt;cmd_resposta&gt;</td>
 				</tr>
 				<tr>
 					<td>addchannel</td>
 					<td>Criar um novo canal de categoria texto e audio</td>
 					<td>["channel"]</td>
-					<td>&lt;addchannel_nome + categoria&gt;</td>
 				</tr>
 				<tr>
 					<td>ban</td>
 					<td>Banir um membro do seervidor</td>
 					<td>["banir"]</td>
-					<td>ban &lt;@user&gt; &lt;motivo&gt;</td> 
 				</tr>
 				<tr>
 					<td>chutar</td>
 					<td>Chutar um membro do servidor</td>
 					<td>["kick", "chute"]</td>
-					<td>chutar &lt;@user&gt; &lt;motivo&gt;</td>
 				</tr>
 				<tr>
 					<td>delchannel</td>
 					<td>Deleta um canal do servidor</td>
 					<td>["dchannel", "apagarcanal", "deletarcanal"]</td>
-					<td>delchannel &lt;menção ou ID do canal&gt;</td>
 				</tr>
 				<tr>
 					<td>delcmd</td>
 					<td>Apaga o comando personalizado</td>
 					<td>["excluircomando", "delcommand", "deletecommand"]</td>
-					<td>delcmd &lt;nome_do_comando&gt;</td>
 				</tr>
 				<tr>
 					<td>limpar</td>
 					<td>Apague até 99 mensagens de um canal</td>
 					<td>["apagar", "clean"</td>
-					<td>limpar &lt;valor&gt;</td>
 				</tr>
 				<tr>
 					<td>lock</td>
@@ -405,37 +398,30 @@
 					<td>mute</td>
 					<td>Silencie um membro do servidor ideal para aqueles que gostam de quebrar as regras</td>
 					<td>["mutar", "silenciar"]</td>
-					<td>mute &lt;@user&gt;</td>
 				</tr>
 				<tr>
 					<td>prefix</td>
 					<td>Mude meu prefixo no seu servidor</td>
 					<td>["setprefix", "newprefix", "prefixo"]</td>
-					<td>prefix &lt;Novo_Prefixo&gt;</td>
 				</tr>
 				<tr>
 					<td>removecargo</td>
 					<td>Retira um cargo do usuario mencionado</td>
 					<td>["removercargo", "removerole"]</td>
-					<td>removecargo &lt;@user&gt; &lt;@cargo&gt;</td>
-				</tr>
 				<tr>
 					<td>slowmode</td>
 					<td>Defina o modo lento de um canal</td>
 					<td>["slow", "modolento"]</td>
-					<td>slowmode &lt;tempo&gt;</td>
 				</tr>
 				<tr>
 					<td>tempmute</td>
 					<td>Defina o tempo que um membro vai permanecer mutado</td>
 					<td>["timemute", "tempomutado"</td>
-					<td>tempmute &lt;@user&gt; &lt;tempo&gt;</td>
 				</tr>
 				<tr>
 					<td>unban</td>
 					<td>Remova o ban de um membro do servidor</td>
 					<td>["desbanir"]</td>
-					<td>unban &lt;ID do usuário&gt;</td>
 				</tr>
 				<tr>
 					<td>unlock</td>
@@ -446,19 +432,106 @@
 					<td>unmute</td>
 					<td>Desilenciar um membro do servidor</td>
 					<td>["desmutar", "desilenciar"]</td>
-					<td>unmute &lt;@user&gt;</td>
 				</tr>
 				<tr>
 					<td>warn</td>
 					<td>Dar uma advertência em um membro do servidor</td>
 					<td>["advertir", "avisar", "aviso"]</td>
-					<td>warn &lt;@user&gt; &lt;motivo&gt;</td>
 				</tr>
 				<tr>
 					<td>warning</td>
 					<td>Veja quantas advertências você ou outro usuário têm</td>
 					<td>["advertencias", "avisos"]</td>
-					<td>warning ou | warning &lt;@user&gt;</td>
 				</tr>
+			</table>
+			</div>
+		<div id="nsfw" id="commands">
+		    <h2 class="text-center text-uppercase">NSFW</h2>
+		    <table>
+		        <tr>
+		            <th>Comandos</th>
+		        </tr>
+		        <tr>
+		            <td>4k</td>
+		        </tr>
+		        <tr>
+		            <td>anal</td>
+		        </tr>
+		        <tr>
+		            <td>ass</td>
+		        </tr>
+		        <tr>
+		            <td>boobs</td>
+		        </tr>
+		        <tr>
+		            <td>gif</td>
+		        </tr>
+		        <tr>
+		            <td>hentai</td>
+		        </tr>
+		        <tr>
+		            <td>hentaigif</td>
+		        </tr>
+		        <tr>
+		            <td>holo</td>
+		        </tr>
+		        <tr>
+		            <td>lewd</td>
+		        </tr>
+		        <tr>
+		            <td>neko</td>
+		        </tr>
+		        <tr>
+		            <td>pussy</td>
+		        </tr>
+		        <tr>
+		            <td>rule34</td>
+		        </tr>
+		        <tr>
+		            <td>thigh</td>
+		        </tr>
+		    </table>
+		</div>
+		<div id="utility" id="commands">
+		    <h2 class="text-center text-uppercase">Utilidade</h2>
+		    <table>
+               <tr>
+                   <th>Comandos</th>
+		           <th>Descrição</th>
+		           <th>Aliases</th>
+                </tr>
+                <tr>
+                    <td>anime</td>
+                    <td>Veja informações sobre seus animes favoritos</td>
+                </tr>
+                <tr>
+                    <td>anunciar</td>
+                    <td>Retorna o texto fornecido em embed</td>
+                    <td>["announce", "a"]</td>
+                </tr>
+                <tr>
+                    <td>avatar</td>
+                    <td>Exibe o seu avatar ou de outro usuario</td>
+                </tr>
+                <tr>
+                    <td>calculadora</td>
+                    <td>Resolva problemas matematicos</td>
+                    <td>['calc', 'calcular', 'mat']</td>
+                </tr>
+                <tr>
+                    <td>clima</td>
+                    <td>Veja o clima atual e a previsão para os proximos dias na sua cidade</td>
+                </tr>
+                <tr>
+                    <td>convite</td>
+                    <td>Para adicionar / convidar o bot para o seu servidor</td>
+                    <td>['con']</td>
+                </tr>
+                <tr>
+                    <td>covid</td>
+                    <td>Receba atualizações de todo o mundo dos casos de covid 19</td>
+                </tr>
+		    </table>
+		</div>
 </body>
 </html>

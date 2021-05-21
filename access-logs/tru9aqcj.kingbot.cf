@@ -1,0 +1,6 @@
+172.106.0.118 - - [21/May/2021:15:05:03 -0300] "GET /.well-known/acme-challenge/TW2IFCM038T_ICXHKBO7JL4BIGQ7A4-P HTTP/1.1" 302 682 "-" "Cpanel-HTTP-Client/1.0"
+172.106.0.118 - - [21/May/2021:15:05:04 -0300] "GET /.well-known/acme-challenge/7BGQ4B_BFTYEVQ1BB_RQC4VI5DU6IP3T HTTP/1.1" 302 682 "-" "Cpanel-HTTP-Client/1.0"
+172.106.0.118 - - [21/May/2021:15:05:04 -0300] "GET /.well-known/acme-challenge/D12MEN9UTIMCHVSIJ92YCHD6IQRCO8_U HTTP/1.1" 302 682 "-" "Cpanel-HTTP-Client/1.0"
+172.106.0.118 - - [21/May/2021:15:23:32 -0300] "GET /.well-known/acme-challenge/T5R1WSAQ7KCYKAPRCG3QJ61231UEPV5X HTTP/1.1" 302 682 "-" "Cpanel-HTTP-Client/1.0"
+172.106.0.118 - - [21/May/2021:15:23:32 -0300] "GET /.well-known/acme-challenge/VM3JVZ14E13HKEOTW5X1GHBX4B4YA6HB HTTP/1.1" 302 682 "-" "Cpanel-HTTP-Client/1.0"
+172.106.0.118 - - [21/May/2021:15:23:33 -0300] "GET /.well-known/acme-challenge/UYX-5_M64P5E5OA3D_J_R8H84H0X5_7V HTTP/1.1" 302 682 "-" "Cpanel-HTTP-Client/1.0"
