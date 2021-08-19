@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+*{
+	scroll-behavior: smooth;
+}
+body
+{
+    background: #000617;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 750px;
+}
+::-webkit-Scrollbar{
+    width: 5px; 
+	background: #000617;
+}
+::-webkit-Scrollbar-thumb{
+	border-radius: 10px;
+	background: #00bfff;
+	box-shadow: inset 0 0 20px #00bfff;
+}
+::-webkit-Scrollbar-track{
+	margin-top: 0px;
+	border-radius: 10px;
+}
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#000617; /* cor do background que vai ocupar o body */
+    z-index:999; /* z-index para jogar para frente e sobrepor tudo */
+}
+#preloader .inner {
+    position: absolute;
+    top: 50%; /* centralizar a parte interna do preload (onde fica a animação)*/
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+.bolas > div {
+  display: inline-block;
+  background-color: #00bfff;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  margin: 3px;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: animarBola;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+   
+}
+.bolas > div:nth-child(1) {
+    animation-duration:0.75s ;
+    animation-delay: 0;
+}
+.bolas > div:nth-child(2) {
+    animation-duration: 0.75s ;
+    animation-delay: 0.12s;
+}
+.bolas > div:nth-child(3) {
+    animation-duration: 0.75s  ;
+    animation-delay: 0.24s;
+}
+ 
+@keyframes animarBola {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  16% {
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+    opacity: 0.7;
+  }
+  33% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; 
+  } 
+}
+h3
+{
+    color: #00bfff;
+    padding-top: 70px;
+    padding-bottom: 25px;
+		padding-left: 40px;
+}
+h2
+{
+		color: #00bfff;
+    padding-top: 70px;
+    padding-bottom: 25px;
+		padding-left: 40px;
+		margin-left: 50px;
+}
+.info
+{
+    font-family: 'Roboto Slab', serif;
+
+}
+.img-fluid
+{
+    -webkit-box-shadow: 7px 5px 3px #00bfff;
+    -moz-box-shadow: 7px 5px 3px #00bfff;
+     box-shadow: 7px 5px 3px #00bfff;
+		 vertical-align:initial;
+		 display: table-cell;
+     margin-left: 25px;
+		 margin-bottom: 20px;
+		 padding: 0!important;
+		 padding-bottom: 35px;
+		 border-radius: 15px;
+}
+th
+{
+	align-items: center;
+	background: #000a25;
+}
+table, th, td
+{
+  	border: 1px solid rgb(36, 35, 35);
+		padding: 10px 20px;
+}
+table
+{
+		width:100%;
+		height: 100%; 
+		color: #9be6ff;
+		border-collapse: collapse;
+  	margin: 10px auto 0;
+  	border-radius: 10px;
+}
+#commands
+{
+		margin-top: 50px;
+		align-items:center;
+}
+nav.navbar.bootsnav
+{
+	position: fixed;
+}
+nav.navber.bootsnav
+{
+    border: none;
+    background: none;
+    margin-bottom: 150px;
+}
+nav.navbar.bootsnav ul.nav li
+{
+    margin-right: 20px;
+}
+nav.navbar.bootsnav ul.nav li a
+{
+    padding: 10px 20px;
+    border-radius: 0;
+    color: #00bfff;
+    text-transform: uppercase;
+    border: 2px solid #000617;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+nav.navbar.bootsnav ul.nav li.dropdown a
+{
+    padding: 10px 70px 10px 15px;
+}
+nav.navbar.bootsnav ul.nav li a:hover,
+nav.navbar.bootsnav ul.nav li.on
+{
+    color: #00FFFF;
+}
+nav.navbar.bootsnav ul.nav li a span:before
+{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #00bfff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.3 ease 0s;
+}
+nav.navbar.bootsnav ul.nav li:hover a span:before
+{
+    width: 50%;
+    animation: bounce 1.5s 0.3s ease-out infinite;
+}
+nav.navbar.bootsnav ul.nav li.active a span:before,
+nav.navbar.bootsnav ul.nav li.on a span:before
+{
+    width: 50%;
+    left: 25%;
+}
+nav.navbar.bootsnav ul.nav li.dropdown a.dropdown-toggle:after
+{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    margin: 0 0 0 7px;
+}
+nav.navbar.bootsnav ul.nav li.dropdown ul
+{
+    top: 120%;
+    transition: all 0.4s ease 0s;
+}
+nav.navbar.bootsnav ul.nav li.dropdown.on ul
+{
+    top: 110%;
+}
+.dropdown-menu.multi-dropdown
+{
+    position: absolute;
+    left: -100% !important;
+}
+nav.navbar-bootsnav li.dropdown ul.dropdown-menu
+{
+    box-shadow: 0 0 10px #00bfff;
+    border: none;
+    border-radius: 20px;
+}
+nav.navbar-bootsnav li.dropdown ul.dropdown-menu.mega-menu-content li
+{
+    font-size: 14px;
+    color: #000617;
+}
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title
+{
+    font-size: 16px;
+    font-weight: bold;
+    color: #000617;
+}
+@keyframes bounce
+{
+    0%{
+        left: 0;  
+    }
+    48%{
+        left: 50%;
+    }
+    50%{
+        left: 50%; 
+    }
+    98%{
+        left: 0%; 
+    }
+    100%{
+        left: 0%;
+    }
+}
